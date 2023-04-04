@@ -1,4 +1,4 @@
-message = 'fxgvbimtdtgixfuxetctktgbghotmbyuxkutlblmxdghehzbrtgzfxgwhkhgzlblptfxfbebdbdhfixmxglbtutw21'
+message = 'Hello, world!'
 translated = ''
 i = len(message) - 1
 

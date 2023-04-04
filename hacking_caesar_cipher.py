@@ -1,4 +1,4 @@
-message = 'fxgvbimtdtgixfuxetctktgbghotmbyuxkutlblmxdghehzbrtgzfxgwhkhgzlblptfxfbebdbdhfixmxglbtutw21' 
+message = 'GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT'
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 for key in range(len(LETTERS)):
