@@ -1,13 +1,15 @@
-message = 'GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT'
+message = 'GIEWIVrGMTLIVrHIQS' #encrypted message
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 for key in range(len(LETTERS)):
     translated = ''
     for symbol in message:
-        if symbol.upper() in LETTERS:
-            num = LETTERS.find(symbol.upper())
-            num = (num - key) % len(LETTERS)
-            translated += LETTERS[num] if symbol.isupper() else LETTERS[num].lower()
+        if symbol in LETTERS:
+            num = LETTERS.find(symbol)
+            num = num - key
+            if num < 0:
+                num = num + len(LETTERS)
+            translated = translated + LETTERS[num]
         else:
-            translated += symbol
-    print(f'Hacking key #{key}: {translated}')
+            translated = translated + symbol
+    print('Hacking key #%s: %s' % (key, translated))
